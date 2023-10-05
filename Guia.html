@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GUIA CSS</title>
+    <link rel="stylesheet" type="text/css" href="Guia.css">
+</head>
+
+<body>
+
+    <div class="Contenido-Global">
+
+
+        <h2>CSS BASICO</h2>
+
+        <ul>
+            <li><b>ESTRUCTURA</b></li><br>
+            <ul>
+                <li>Selector: { propiedad : valor; } </li>
+            </ul>
+
+            <br>
+
+            <li><b>SELECTORES</b></li><br>
+            <ul>
+                <li>Universal = * { } <span>// El * selecciona de Manera Global</span></li>
+                <li>ID = #id-element <span>// El ID tiene que ser Unico</span></li>
+                <li>Tipo = etiqueta{ }</li>
+                <li>atributo = [nameAtributo = "Valor"]{ }</li>
+                <li>Descendientes = id > tipo > clase > atributo </li>
+                <li>PseudoClases = b:hover { } // El pseudo se maneja eventos </li><br>
+            </ul>
+
+            <br>
+
+            <li><b>METODOLOGIA BEM</b></li>
+            <p>Esta metolodogia es una forma para reconocer los elementos. Ejemplo:<br><br>
+                <span> &nbsp;&nbsp; <i>form__class-select </i></span> <br>
+            </p>
+
+
+            <li><b>UNIDADES</b></li><br>
+            <ul>
+                <li>font-size: cm | mm | Q | in | pc | pt | p <span>&nbsp;&nbsp;// Unidades de medida</span></li><br>
+            </ul>
+
+            <li><b>PROPIEDADES DE TEXTOS</b></li><br>
+            <ul>
+                <li>font-size: 1m <span>&nbsp;&nbsp;//&nbsp; Tamano de Letra </span></li>
+                <li>background-color: #fff <span>&nbsp;&nbsp;//&nbsp; Tamano de Letra </span></li>
+                <li>width: 100vw <span>&nbsp;&nbsp;//&nbsp; Ancho de caja </span></li>
+                <li>height: 100vw <span>&nbsp;&nbsp;//&nbsp; Alto de caja </span></li>
+                <li>font-family: georgina <span>&nbsp;&nbsp;//&nbsp; Tipo de Letra </span></li>
+                <li>line-height: 2 <span>&nbsp;&nbsp;//&nbsp; El line height nace del centro de la Letra </span></li>
+                <li>font-weight: 400 <span>&nbsp;&nbsp;//&nbsp; Grosor de letra </span></li>
+                <li>color: red <span>&nbsp;&nbsp;//&nbsp; Color de Letra </span></li>
+                <li>text-align: center <span>&nbsp;&nbsp;//&nbsp; Centra contenido </span></li><br>
+
+            </ul>
+
+            <li><b>TIPOGRAFIAS EXTERNAS</b></li>
+            <p>
+                <a href="https://fonts.google.com/" target="_placehold"> Google Fonts</a>
+            </p>
+
+            <li><b>NORMALIZE</b></li>
+            <p>
+                Sirve para poner reiniciar los estilos de los navegadores. Pasos a seguir:
+            </p>
+            <ul>
+                <ol>Pagina descarga => <a href="https://necolas.github.io/normalize.css/"
+                        target="_placehold">Normalize.css</a></ol>
+                <ol>Tenemos que seleccionar todo el codigo y guardar como <b>"Normalize.css"</b></ol>
+                <ol>y lo guardamos en la carpeta del proyecto</ol>
+                <ol>--img{ max-width: 100%} <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; // Esto
+                        hace que la imagen se ponga al 100% en moviles</span></ol>
+                <ol>--*{ box-sizing: border-box; <span> &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; // Se Calcula las medidas
+                        de la caja</span><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp; padding: 0; <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp; margin: 0; <br>
+                </ol>
+            </ul>
+
+
+            <li><b>CAJAS</b></li>
+            <p>
+                Hay dos tipos de cajas: Las que son en <b>linea y bloques:</b>
+            </p>
+            <ul>
+                <li><u>Bloque:</u>&nbsp;&nbsp; Ocupa todo el espacio del contenedor. Ocupa toda la caja.</li>
+                <li><u>Linea:</u>&nbsp;&nbsp; Esto se extendera hasta completar todo el espacio disponible de la caja.
+                </li>
+            </ul>
+
+            <br>
+
+            <li><b>PADDING</b></li>
+            <p>
+                El relleno se utiliza para crear espacio alrededor del contenido de un elemento, dentro de los bordes
+                definidos.
+            </p>
+            <ul>
+                <li>padding: 10px</li>
+                <li>padding-top: 10px</li>
+                <li>padding-bottom: 10px</li>
+                <li>padding-left: 10px</li>
+                <li>padding-right: 10px</li>
+            </ul>
+
+            <br>
+
+            <li><b>HEIGHT</b></li>
+            <p>
+                La propiedad height establece la altura de un elemento.
+            </p>
+            <ul>
+                <li>height: 100% </li>
+            </ul>
+
+            <br>
+
+            <li><b>WIDTH</b></li>
+            <p>
+                La propiedad width establece el ancho de un elemento.
+            </p>
+            <ul>
+                <li>width: 100% </li>
+            </ul>
+
+            <br>
+
+            <li><b>BOX SIZING</b></li>
+            <p>
+                La propiedad CSS box-sizing nos permite incluir el relleno y el borde en el ancho y alto total de un
+                elemento.
+            </p>
+            <ul>
+                <li> box-sizing: border-box; <span>&nbsp;&nbsp;&nbsp;&nbsp; // El siguiente código garantiza que todos
+                        los elementos tengan el tamaño de esta forma más intuitiva.</span></li>
+            </ul>
+
+            <br>
+
+            <li><b>MARGIN</b></li>
+            <p>
+                Los márgenes se utilizan para crear espacio alrededor de los elementos, fuera de los bordes definidos.
+            </p>
+            <ul>
+                <li>margin: 10px <span>&nbsp;&nbsp;&nbsp;&nbsp; // Espaciado entre Cajas. Distancia entre cajas.</span>
+                </li>
+                <li>margin: auto <span>&nbsp;&nbsp;&nbsp;&nbsp; // Centra bloque que no esta posicionado</span></li>
+            </ul>
+
+            <br>
+
+            <li><b>BORDES</b></li>
+            <p>
+                Las propiedades de borde de CSS le permiten especificar el estilo, el ancho y el color del borde de un
+                elemento.
+            </p>
+            <ul>
+                <li>border: 4px solid blue</li>
+                <li>border-radius: 50% <span>&nbsp;&nbsp;&nbsp;&nbsp; // Redondea el borde</span></li>
+            </ul><br>
+
+            <li><b>BOX MODEL</b></li>
+            <h5><u>Jerarquia</u></h5>
+            <ul>
+                <li>content => line-height:</li>
+                <li>padding => padding:</li>
+                <li>border => border:</li>
+                <li>margin => margin:</li>
+            </ul><br>
+
+            <li><b>SOMBRAS</b></li>
+            <p>
+                La propiedad box-shadow adjunta una o más sombras a un elemento.
+            </p>
+            <ul>
+                <li>box-shadow: 0px 0px 0px 0px color </li>
+                <li>text-shadow: 0px 0px 0px 0px color <span>&nbsp;&nbsp;&nbsp;&nbsp;// Propiedad que da sombra a al
+                        texto</span> </li>
+            </ul><br>
+
+            <li><b>OUTLINE</b></li>
+            <p>
+                Un contorno es una línea que se dibuja al rededor de elementos, fuera de los límites del borde, para
+                resaltar un elemento.
+            </p>
+            <ul>
+                <li>outline: 5px solid red;</li>
+            </ul><br>
+
+
+
+            <li><b>POSITION</b></li>
+            <p>
+                La propiedad position especifica el tipo de método de posicionamiento utilizado para un elemento
+                (estático, relativo, fijo, absoluto o pegajoso).
+                Cuando se posiciona un elemento, hace que adquiera 4 elementos que son: <b>top,bottom,left,rigth.</b>
+            </p>
+            <ul>
+                <li>position:static <span>&nbsp;&nbsp;Un elemento con position: static; no está posicionado de ninguna
+                        manera especial; siempre se posiciona de acuerdo con el flujo normal de la página. </span></li>
+                <li>position:relative <span>&nbsp;&nbsp; Un elemento con position: relative; se coloca en relación con
+                        su posición normal. </span></li>
+                <li>position:fixed <span>&nbsp;&nbsp; Un elemento con position: fixed; se coloca en relación con la
+                        ventana gráfica, lo que significa que siempre permanece en el mismo lugar, incluso si se
+                        desplaza la página.</span></li>
+                <li>position:absolute <span>&nbsp;&nbsp;Los elementos de posición absoluta se eliminan del flujo normal
+                        y pueden superponerse a los elementos.</span> </li>
+                <li>position:sticky <span>&nbsp;&nbsp;Hace que el elemento se comporte como en position:relative hasta
+                        que, debido al scroll de la página, el elemento es alcanzado por la parte superior del viewport.
+                        En ese momento se comporta como fixed, y para que funcione correctamente hay que especificar al
+                        menos un valor top, bottom, left o right, en función de si va a ser sticky en un scroll
+                        horizontal o vertical.</span></li>
+            </ul><br>
+
+            <li><b>Z-INDEX</b></li>
+            <p>
+                La propiedad z-index especifica el orden de pila de un elemento.<br>
+                Un elemento con mayor orden de apilamiento siempre está delante de un elemento con menor orden de
+                apilamiento.
+            </p>
+            <span><u>NOTA:</u>&nbsp;&nbsp; z-index solo funciona en elementos posicionados (posición: absoluta,
+                posición: relativa, posición: fija o posición: fija) y elementos flexibles (elementos que son hijos
+                directos de elementos display:flex ).</span><br>
+            <span><u>NOTA:</u>&nbsp;&nbsp; Si dos elementos colocados se superponen sin z-index especificar, el último
+                elemento colocado en el código HTML se mostrará en la parte superior. ).</span>
+        </ul>
+
+        <h2>CSS INTERMEDIO</h2>
+
+        <ul>
+
+            <li><b>DISPLAY</b></li>
+            <p>
+                La propiedad CSS display especifica si un elemento es tratado como<b> block</b> or <b> inline element
+                </b> y el diseño usado por sus hijos, como <b>flow layout(Diseño de Flujo), grid(Cuadricula) o
+                    flex(Flexible).
+                    Ejm:
+            </p>
+            <ul>
+                <li>display: block;</li>
+                <li>display: inline;</li>
+                <li>display: run-in;</li>
+            </ul><br>
+
+
+            <li><b>OVERFLOW</b></li>
+            <p>
+                La propiedad CSS overflow especifica: si recortar contenido, dibujar barras de desplazamiento o mostrar
+                el contenido excedente en un elemento a nivel de bloque.
+            </p>
+            <ul>
+                <li>overflow: visible</li>
+                <li>overflow: hidden</li>
+                <li>overflow: scroll</li>
+                <li>overflow: auto</li>
+            </ul><br>
+
+
+
+            <li><b>FLOAT</b></li>
+            <p>
+                La propiedad CSS float ubica un elemento al lado izquierdo o derecho de su contenedor, permitiendo a los
+                elementos de texto y en línea aparecer a su costado. El elemento es removido del normal flujo de la
+                página, aunque aún sigue siendo parte del flujo (a diferencia del posicionamiento absoluto).
+            </p>
+            <ul>
+                <li>float: left;</li>
+                <li>float: right;</li>
+                <li>float: none;</li>
+                <li>float: inline-start;</li>
+                <li>float: inline-end;</li>
+            </ul><br>
+
+            <li><b>PSEUDOELEMENTOS</b></li>
+            <p>
+                Al igual que las pseudo-classes, los pseudo-elementos se añaden a los selectores, pero en cambio, no
+                describen un estado especial sino que, permiten añadir estilos a una parte concreta del documento. Por
+                ejemplo, el pseudoelemento ::first-line selecciona solo la primera línea del elemento especificado por
+                el selector.
+            </p>
+            <ul>
+                <li> selector::pseudo-elemento { propiedad: valor; }</li>
+                <li>::after</li>
+                <li>::before</li>
+                <li>::first-letter</li>
+                <li>::first-line</li>
+                <li>::selection</li>
+                <li>::placeholder</li><br>
+                <span>"Se podria decir que es como un EDIT al elemento"</span>
+            </ul><br>
+
+
+            <li><b>PSEUDOCLASES</b></li>
+            <p>
+                Una pseudoclase es un selector que marca los elementos que están en un estado específico, por ejemplo,
+                los que son el primer elemento de su tipo, o aquellos por los que el cursor les pasa por encima. Tienden
+                a actuar como si hubieras aplicado una clase en una parte determinada del documento y, a menudo, ayudan
+                a reducir el exceso de clases y proporcionan un marcado más flexible y fácil de mantener. <b> Las
+                    pseudoclases son palabras clave que comienzan con dos puntos:</b>
+            </p>
+            <span>
+                <span>article p:first-child {</span><br>
+                <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; font-size:
+                    120%;</span><br>
+                <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; font-weight:
+                    bold;</span><span><br> }</span>
+            </span><br><br>
+            <span> "Se podria decir que es como un EFECTO al elemento"</span> <br><br>
+
+
+
+            <li><b>OBJECT FIT</b></li>
+            <p>
+                La propiedad object-fit se usa para especificar cómo se debe cambiar el tamaño de un <b>IMG</b> o
+                <b>VIDEO</b> paraque se ajuste a su contenedor.
+            </p>
+            <ul>
+                <li>object-fit: fill;</li>
+                <li>object-fit: contain;</li>
+                <li>object-fit: cover;</li>
+                <li>object-fit: scale-down</li>
+                <li>object-fit: none;</li>
+                <li>object-fit: initial;</li>
+                <li>object-fit: inherit;</li>
+            </ul><br>
+
+            <li><b>OBJECT POSITION</b></li>
+            <p>
+                La propiedad object-position se usa junto con object-fit para especificar cómo se debe colocar un
+                <b>IMG</b> o <b>VIDEO</b> con las coordenadas x/y dentro de su "propio cuadro de contenido".<br>
+                <br>
+                object-position: position;<br>
+                object-position: initial;<br>
+                object-position: inherit;<br>
+            </p>
+
+            <li><b>CURSOR</b></li>
+            <p>
+                La propiedad cursor especifica el mouse que se mostrará cuando se apunte sobre un elemento.
+            </p>
+            <ul>
+                <li>cursor: value;</li>
+            </ul>
+
+            <br>
+
+            <li><b>COLOR</b></li>
+            <p>
+                La propiedad:color especifica el color del texto.
+            </p>
+            <ul>
+                <li>color: #fff;</li>
+            </ul>
+
+            <br>
+
+            <li><b>RESPONSIVE DESIGN</b></li>
+            <p>
+                Cuando utilizamos el término “responsive” (adaptable), nos referimos principalmente a “responsive
+                design” (diseño web adaptable). Esto significa hacer que un sitio web sea accesible y adaptable en todos
+                los devices: tabletas, smartphones, etc.
+            </p>
+            <h4><u>Técnicas para hacer un diseño responsive</u></h4>
+            <ul>
+                <li>Uso de viewport en la etiqueta metatag.</li>
+                <li>Uso de Media Queries.</li>
+                <li>Uso de Max-Width y Min-Width.</li>
+                <li>Uso de medidas relativas.</li>
+                <li>Tamaño de fuente en un diseño responsive.</li>
+                <li>Prueba tus sitios con emuladores.</li>
+            </ul><br>
+
+            <li><b>FLEX BOX</b></li>
+            <p>
+                Flex propiedad establece la longitud flexible en elementos flexibles.<br>
+                Las cosas que se pueden hacer con Flexbox involucran a dos partes fundamentales. <br>
+                Una es el contenedor y otra los ítems que están dentro de él.<br>
+                Mas informacion respecto a FLEXBOX <a
+                    href="https://desarrolloweb.com/articulos/conceptos-principales-flexbox.html">clic aqui</a>
+                <br>
+            </p>
+            <div class="Flex-container">
+                <h4> <u>Flex Container</u></h4>
+                <h5>
+                    Propiedades
+                </h5>
+
+                <ul>
+                    <li>flex-direction : row/ row-reverse / column / column-reverse</li>
+                    <li>flex-wrap : wrap / nowrap / wrap-reverse</li>
+                    <li>flex-flow row wrap (flex-direcion flex-wrap) //abreviado </li>
+                    <li>justify-content flex-start / flex-end / center / space-between / space-around / space-evenly
+                    </li>
+                    <li>align-items : flex-start / flex-end / center / stretch</li>
+                    <li>align-content : flex-start / flex-end / center / stretch /space-between / space-around</li>
+                </ul>
+            </div>
+
+            <div class="Flex-items">
+                <h4><u>Flex Items</u></h4>
+                <h5>
+                    Propiedades
+                </h5>
+                <ul>
+                    <li>align-self</li>
+                    <li>flex (flex-grow , flex-shrink, flex-basis)</li>
+                    <li>flex-basis</li>
+                    <li>flex-grow</li>
+                    <li>flex-shrink</li>
+                    <li>order</li>
+                </ul>
+            </div><br>
+
+            <li><b>GRID</b></li>
+            <p>
+                El módulo de diseño de cuadrícula de CSS ofrece un sistema de diseño basado en cuadrículas, con filas y
+                columnas, lo que facilita el diseño de páginas web sin tener que usar flotadores y posiciones.
+            </p>
+            <ul>
+                <li>grid-container</li>
+                <li>grid-item </li>
+                <li>grid-cell </li>
+                <li>grid-tracks </li>
+                <li>grid-area </li>
+                <li>grid-line </li>
+            </ul>
+
+
+            <div class="GRID-PROPIEDADES">
+                <h4><u>USO DE GRID CONTAINER E ITEMS</u></h4>
+
+                <h5>propiedades</h5>
+                <ul>
+                    <li>grid-template-rows (grid-container)</li>
+                    <li>grid-template-columns (grid-container)</li>
+                    <span>&nbsp;&nbsp;#unidades de medida "auto" y "fr"</span><br><br>
+
+                    <li>row-gap (grid-container)</li>
+                    <li>column-gap (grid-container)</li>
+                    <li>grid-gap:row (grid-container)</li><br>
+
+                    <li>grid-row-start (grid-item)</li>
+                    <li>grid-row-end (grid-item)</li>
+                    <li>grid-column-start (grid-item)</li>
+                    <li>grid-column-end (grid-item)</li>
+                    <li>grid-row (grid-item)</li>
+                    <li>grid-column (grid-item)</li>
+                    <span> repeat (cantidad , tamano/s) </span><br><br>
+                </ul>
+            </div>
+
+            <div class="GRID-IMPLICITO Y EXPLICITO">
+                <h4><u>GRID IMPLICITO Y EXPLICITO</u></h4>
+
+                <h5>propiedades</h5>
+                <ul>
+                    <li>align-self</li>
+                    <li>flex (flex-grow , flex-shrink, flex-basis)</li>
+                    <li>flex-basis</li>
+                    <li>flex-grow</li>
+                    <li>flex-shrink</li>
+                    <li>order</li>
+                </ul>
+            </div>
+
+            <div class="GRID-DINAMICO">
+                <h4><u>GRID DINAMICO</u></h4>
+
+                <h5>propiedades</h5>
+                <ul>
+                    <li>mimax()</li>
+                    <li>mincontent</li>
+                    <li>max-content</li>
+                    <span> #Cantidad:auto-fill / auto-fit</span><br><br>
+                </ul>
+            </div>
+
+
+            <div class="ALINEACION-CONTROL-DE-FLUJO">
+                <h4><u>ALINEACION Y CONTROL DE FLUJO</u></h4>
+
+                <h5>propiedades</h5>
+                <ul>
+                    <li>justify-content (horizontal) : stretch / start / center / end</li>
+                    <li>align-content (vertical): stretch / start / center / end</li>
+                    <span># mas de la flex</span><br>
+                    <span>&nbsp;: space-arround / space-between / space-evenly </span>
+                </ul>
+
+            </div>
+            <div class="GRID-ITEM">
+                <h4><u>GRID ITEM</u></h4>
+
+                <h5>propiedades</h5>
+                <ul>
+                    <li>align-self: stretch / start / center / end</li>
+                    <li>justify-self: stretch / start / center / end</li>
+                    <li>place-self: align-self justify-self</li>
+                    <li>order</li>
+                </ul>
+            </div>
+
+            <div class="AREA-GRID">
+                <h4><u>AREA GRID</u></h4>
+
+                <h5>Grid Container</h5>
+                <ol> • grid-template-areas: Nombre del Area;</ol>
+
+                <h5>Grid Item</h5>
+                <ol> • grid-area: NombreDelArea;</ol>
+
+            </div>
+            <div class="NOMBRES-A-LAS-LINEAS">
+                <h4><u>NOMBRES A LAS LINEAS</u></h4>
+
+                <h5>propiedades</h5>
+
+                <ol> [line-name]</ol>
+                <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; # se puede reemplazar en: GRID-ROW | GRID-COLUMN
+                </span><br>
+
+            </div>
+
+            <div class="SHORTHAND">
+                <h4><u>SHORTHAND</u></h4>
+
+                <h5>propiedades</h5>
+                <ul>
+                    <li>grid-template: row / columns (grid-container)</li>
+                    <li>grid-templat: area unidad</li>
+                    <li>grid: global para abreviar</li>
+                    <span>#todo esto no es tan recomendado, porque lo hace muy resumido</span>
+                </ul>
+            </div><br>
+
+            <li><b>RESPONSIVE DISEGN (COMPLETO)</b></li><br>
+
+            <span>@media screen and (min-width: 600px) and (max-width:750px) {<br>
+
+                <span>&nbsp;&nbsp;&nbsp;&nbsp;.div-responsive{</span><br>
+                <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;background: red;</span><br>
+                <span>&nbsp;&nbsp;&nbsp;&nbsp;}</span><br>
+                }<br>
+            </span>
+
+        </ul>
+
+
+        <h2>CSS AVANZADO</h2>
+
+        <ul>
+            <li><b>TRANSITION</b></li>
+            <p>
+                Las transiciones de CSS le permiten cambiar los valores de propiedad sin problemas, durante un período
+                determinado.
+            </p>
+            <ul>
+                <li>transition</li>
+                <li>transition-delay: delay/s</li>
+                <li>transition-duration: duration/s </li>
+                <li>transition-property: property/ ies - all - none</li>
+                <li>transition-timing-function: linear | ease | ease-in | ease-out | ease-in-out | steps(int,star|end) |
+                    initial | inherit;</li><br>
+            </ul>
+            <span>Fuente:<a href="https://www.w3schools.com/css/css3_transitions.asp" target="_placehold">Transitions
+                    CSS</a></span><br>
+
+            <br>
+
+            <li><b>ANIMATION</b></li>
+            <p>
+                Una animación permite que un elemento cambie gradualmente de un estilo a otro.Puede cambiar tantas
+                propiedades CSS como desee, tantas veces como desee.Para usar la animación CSS, primero debe especificar
+                algunos fotogramas clave para la animación.Los fotogramas clave contienen los estilos que tendrá el
+                elemento en determinados momentos.
+            </p>
+            <ul>
+                <li>@keyframes</li>
+                <li>animation-name: name</li>
+                <li>animation-duration: duration</li>
+                <li>animation-delay: delaye</li>
+                <li>animation-iteration-count: number</li>
+                <li>animation-direction: normal | reverse | alternate | alternate-reverse</li>
+                <li>animation-timing-function: (Transition values)</li>
+                <li>animation-fill-mode: none | forwards | backwards | both | initial | inherit;r</li>
+                <li>animation</li><br>
+            </ul>
+            <span>Fuente <a href="https://www.w3schools.com/css/css3_animations.asp" target="_placehold">Animaciones
+                    CSS</a></span><br>
+
+            <br>
+
+            <li><b>TRANSFORM</b></li>
+            <p>
+                Las transformaciones CSS le permiten mover, rotar, escalar y sesgar elementos.
+            </p>
+            <ul>
+                <li>transform: translateX(x) - translateY(y)</li>
+                <li>transform: scale(xy - x,y) - scaleX(x) - scaleY(y)</li>
+                <li>transform: rotate(angleUnit) - rotateX(angleUnit) - rotateZ(angleUnit) || angleUnit = deg - grad -
+                    rad - turn</li>
+                <li>transform: skew(angleUnit)</li><br>
+            </ul>
+            <span>Fuente:<a href="https://www.w3schools.com/css/css3_2dtransforms.asp" target="_placehold">Transforms
+                    CSS</a></span><br>
+
+            <br>
+
+            <li><b>Background</b></li>
+            <p>
+                En este capítulo, aprenderá cómo agregar varias imágenes de fondo a un elemento.También aprenderá sobre
+                las siguientes propiedades:
+            </p>
+            <ul>
+                <li>background-color: color</li>
+                <li>background-image: url()</li>
+                <li>background-size: x,y, auto, cover, contain</li>
+                <li>background-position: left - top - bottom - right - center ++ left - bottom - right - center</li>
+                <li>background-attachment: scroll | fixed | inherit</li>
+                <li>background-clip: border-box | padding-box | content-box</li>
+                <li>background-origin: border-box | border-box | padding-box</li><br>
+            </ul>
+            <span>Fuente:<a href="https://www.w3schools.com/css/css3_backgrounds.asp" target="_placehold">Background
+                    CSS</a></span><br>
+
+            <br>
+
+            <li><b>Variables</b></li>
+            <div class="variable">
+                <p>
+                    La var() función se utiliza para insertar el valor de una variable CSS.Para crear una variable con
+                    alcance global, declárela dentro del
+                    :root selector. El :root selector coincide con el elemento raíz del documento.
+                </p>
+                <ul>
+                    <li>var(--name, value)</li><br>
+                </ul>
+            </div>
+            <div class="variable-global">
+                <h3>Variable global</h3>
+                <p>
+                    En primer lugar: las variables CSS pueden tener un alcance global o local.
+                    Para crear una variable con alcance global, declárela dentro del :root selector. El :root selector
+                    coincide con el elemento raíz del documento.<br>Ejemplo:<br>
+                </p>
+                <span> :root {
+                    <span><br>&nbsp; --blue: #1e90ff;</span>
+                    <span><br>&nbsp; --white: #ffffff;</span><br>
+                    }</span><br>
+                <br>
+                <span>body: { background-color: var(--blue); } </span><br>
+                <span>h2 { border-bottom: 2px solid var(--white); } </span><br><br>
+            </div>
+            <span>Fuente:<a href="https://www.w3schools.com/css/css3_variables.asp" target="_placehold"> Variables
+                    CSS</a>
+            </span><br>
+
+            <br>
+
+            <li><b>FILTER</b></li>
+            <p>
+                Una animación permite que un elemento cambie gradualmente de un estilo a otro.Puede cambiar tantas
+                propiedades CSS como desee, tantas veces como desee.Para usar la animación CSS, primero debe especificar
+                algunos fotogramas clave para la animación.Los fotogramas clave contienen los estilos que tendrá el
+                elemento en determinados momentos.
+            </p>
+            <ul>
+                <li>filter: none | blur() | brightness() | contrast() | drop-shadow() | grayscale() | hue-rotate() |
+                    invert() | opacity() | saturate() | sepia() | url();</li>
+                <br>
+            </ul>
+
+            <span>Fuente <a href="https://www.w3schools.com/cssref/css3_pr_filter.asp" target="_placehold"> Filtros
+                    CSS</a>
+            </span><br>
+
+            <br>
+
+            <li><b>CLEAR FIX</b></li>
+            <p>
+                Los elementos después de un elemento <b>FLOAT</b> fluirán a su alrededor. Use el truco "clearfix" para
+                solucionar el problema.Un clearfix es una forma de que un elemento borrar automáticamente sus elementos
+                hijos para no tener que añadir marcas adicionales. Generalmente se utiliza en diseños de flotadores
+                donde los elementos son flotados para ser apilados horizontalmente.
+            </p>
+            <span>.clearfix{</span><br>
+            <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; float:none;</span><br>
+            <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; clear:both;</span><br><span>}</span><br>
+
+            <br><br>
+
+            <li><b>OTROS</b></li>
+            <p>
+                Otras propiedades, funciones y selectores curiosos de CSS.
+            </p>
+            <ul>
+                <li>direction: ltr | rtl | initial | inherit</li>
+                <li>letter-pacing</li>
+                <li>scroll-behavior: smooth;</li>
+                <li>user-select: none</li>
+                <li>text-shadow</li><br>
+            </ul>
+            <span>Fuente:<a href="https://www.w3schools.com/css/default.asp" target="_placehold"> w3schools
+                    CSS</a></span><br>
+
+            <br>
+
+
+
+        </ul>
+
+
+
+
+    </div>
+
+
+
+</body>
+
+</html>
